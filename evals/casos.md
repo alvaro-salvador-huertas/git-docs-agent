@@ -2,7 +2,7 @@
 
 Material para quien evalúe el proyecto. **Este archivo y sus criterios no forman parte de las fuentes del agente.** El conjunto de fuentes previsto se limita a los cinco documentos de `docs/` enumerados en el README.
 
-Todos los casos están **pendientes de ejecución**. No hay respuestas del agente ni resultados registrados.
+La [primera evaluación del 2026-10-12](resultados-2026-10-12.md) documenta siete intentos con sus registros y justificaciones. Con el prompt original se superaron EVAL-02, EVAL-03, EVAL-04 y EVAL-05; EVAL-01 no se superó por una omisión. Con el prompt ajustado se superaron las nuevas ejecuciones de EVAL-01 y EVAL-05. EVAL-02, EVAL-03 y EVAL-04 siguen pendientes de repetición con el ajuste. Se conservan las preguntas y los criterios originales.
 
 ## Criterios comunes
 
@@ -15,7 +15,7 @@ Una abstención injustificada falla los casos respondibles. En el caso de inform
 ## EVAL-01 — Estado de archivos
 
 - **Identificador:** EVAL-01.
-- **Estado:** pendiente de ejecución.
+- **Estado:** original no superado (respuesta correcta pero incompleta); ajustado superado. Se conserva el fallo inicial en el [informe](resultados-2026-10-12.md).
 - **Pregunta:** ¿Qué información muestra `git status` sobre los archivos de un repositorio?
 - **Respondible con la documentación local:** sí.
 
@@ -29,7 +29,7 @@ Una abstención injustificada falla los casos respondibles. En el caso de inform
 ## EVAL-02 — Preparación y commit
 
 - **Identificador:** EVAL-02.
-- **Estado:** pendiente de ejecución.
+- **Estado:** original superado; ajustado no repetido, pendiente de ejecución. Véase el [informe](resultados-2026-10-12.md).
 - **Pregunta:** ¿Qué diferencia hay entre `git add` y `git commit` al guardar cambios?
 - **Respondible con la documentación local:** sí.
 
@@ -45,7 +45,7 @@ Respaldo de estas distinciones: [docs/git-add.md — Confusiones frecuentes](../
 ## EVAL-03 — Comparaciones de diff
 
 - **Identificador:** EVAL-03.
-- **Estado:** pendiente de ejecución.
+- **Estado:** original superado; ajustado no repetido, pendiente de ejecución. Véase el [informe](resultados-2026-10-12.md).
 - **Pregunta:** ¿Qué diferencia hay entre `git diff` y `git diff --staged`?
 - **Respondible con la documentación local:** sí.
 
@@ -59,7 +59,7 @@ Respaldo de estas distinciones: [docs/git-add.md — Confusiones frecuentes](../
 ## EVAL-04 — Publicación de commits
 
 - **Identificador:** EVAL-04.
-- **Estado:** pendiente de ejecución.
+- **Estado:** original superado; ajustado no repetido, pendiente de ejecución. Véase el [informe](resultados-2026-10-12.md).
 - **Pregunta:** ¿Qué hace `git push` y cómo se relaciona con los commits locales?
 - **Respondible con la documentación local:** sí.
 
@@ -73,7 +73,7 @@ Respaldo de estas distinciones: [docs/git-add.md — Confusiones frecuentes](../
 ## EVAL-05 — Información insuficiente sobre rebase
 
 - **Identificador:** EVAL-05.
-- **Estado:** pendiente de ejecución.
+- **Estado:** original superado; ajustado superado. Ambas ejecuciones están documentadas en el [informe](resultados-2026-10-12.md).
 - **Pregunta:** ¿Cómo puedo resolver un conflicto durante un `git rebase`?
 - **Respondible con la documentación local:** no.
 
