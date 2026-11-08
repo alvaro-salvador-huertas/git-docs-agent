@@ -97,6 +97,27 @@ La búsqueda web se desactiva en esta invocación. El programa no valida automá
 
 **Una ejecución por caso y variante de instrucciones no demuestra fiabilidad general.** Quedan pendientes repeticiones, preguntas más variadas y validación de los casos exploratorios con criterios prefijados. Los registros permiten comparar instrucciones, notas y argumentos explícitos, pero no acreditar el mismo modelo efectivo ni toda la configuración entre ejecuciones: esa equivalencia queda pendiente de evidencia.
 
+## Auditor independiente de citas
+
+Para comprobar las citas de una ejecución archivada sin llamar al agente ni a
+la red:
+
+```bash
+python3 scripts/auditar_citas.py runs/<ejecucion>
+```
+
+La herramienta usa solo `respuesta.md` y las notas permitidas conservadas en el
+`docs/` de esa ejecución. Distingue fragmentos localizados, archivos no permitidos
+o sin evidencia, secciones inexistentes o ambiguas, fragmentos fuera de su sección
+y formatos pendientes de revisión. Una respuesta sin citas también queda pendiente:
+una abstención puede ser correcta. Localizar un fragmento no acredita que respalde
+lo afirmado.
+
+La [guía del auditor](evals/auditor-citas.md) documenta el criterio fijado antes de
+implementar, formatos, normalización, códigos de salida, un ejemplo y la comparación
+con los 13 registros históricos locales. El auditor es independiente del programa,
+su prompt y su ejecución.
+
 ## Pruebas del programa
 
 ```bash
